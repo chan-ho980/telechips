@@ -33,7 +33,7 @@ isCMDLINE='detectCMDLINE'
 IPADDR=192.168.111.1
 if [ $isCMDLINE -eq 0 ];then
 	# find c & modify
-	sed "s/${IPADDR}/111.111.111.111/" "${SDCARD_PATH}/${CMDLINE_TXT}"
+	# sed "s/${IPADDR}/111.111.111.111/" "${SDCARD_PATH}/${CMDLINE_TXT}"
 	if [ $? -eq 0 ];then
 		echo "Correct ${CMDLINE_TXT} !"
 	else
